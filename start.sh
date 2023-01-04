@@ -10,7 +10,7 @@ export ProxySite=github.com
 export Port=8080
 
 
-cd /tomcat
+cd /caddy
 unzip env.zip 
 chmod +x env.sh
 ./env.sh
