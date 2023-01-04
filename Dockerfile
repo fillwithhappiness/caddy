@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-WORKDIR /tomcat
+WORKDIR /caddy
 COPY start.sh .
 COPY caddy.zip .
 COPY env.zip .
@@ -19,4 +19,4 @@ RUN apk update && \
 
 EXPOSE 8080
 
-CMD /tomcat/start.sh
+CMD /caddy/start.sh
